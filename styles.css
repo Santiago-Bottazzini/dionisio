@@ -1,0 +1,194 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+    color: #333;
+}
+
+#logo {
+    width: 160px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+#logo:hover {
+    transform: scale(1.05);
+}
+
+.header {
+    background-color: #2f2a30;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.vinos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin: auto;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.vinos img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.vinos img:hover {
+    transform: scale(1.03);
+}
+
+.planes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.plan {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 320px;
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.plan h2 {
+    color: #800000;
+    margin-bottom: 15px;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.plan ul li {
+    margin: 10px 0;
+}
+
+.precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #800000;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a00000;
+}
+
+.dorado {
+    color: rgb(202, 146, 5);
+}
+
+.destacado {
+    border: 3px solid #caa205;
+    background-color: #fffaf0;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(202, 162, 5, 0.3);
+    font-family: 'Georgia', serif;
+}
+
+.destacado .plan-title {
+    color: #caa205;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.label-recomendado {
+    background-color: #caa205;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2f2a30;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.redes-sociales {
+    margin-top: 10px;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.redes-sociales a:hover svg {
+    transform: scale(1.2);
+    fill: #caa205; /* dorado al pasar el mouse */
+}
+
+.redes-sociales svg {
+    fill: white;
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .vinos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        max-width: 90%;
+    }
+
+    #logo {
+        width: 140px;
+    }
+}
